@@ -8,13 +8,13 @@
     "normalize-css": "~3.0.2",
     "bootstrap": "~3.3.2",
     "crossfade.js": "~0.1.0",
-    "fontawesome": "~4.3.0",
+    // "fontawesome": "~4.3.0",
     "waypoints": "~3.1.0",
     "scrollme": "~1.1.0",
-    "Parallax-ImageScroll": "~0.1.4",
+    "Parallax-ImageScroll": "~0.1.4"
   },
   "devDependencies": {},
   "resolutions": {
-    "fontawesome": "~4.2.0"
+    "fontawesome": "~4.2.0",
   }
 }
