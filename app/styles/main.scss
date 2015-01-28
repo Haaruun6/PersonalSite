@@ -685,7 +685,21 @@ $BG: rgba(255,218,177,0.2);
 
 }
 
-	
+	@media screen and (max-width: 400px){
+#head{
+		
+		
+	.type{
+	 	font-size: 1.6em;     /* 62/24= 2.6em */
+	 	color: white;
+	 	position: absolute;
+	 	z-index: 1;
+	 	top: 30%;
+	 	left: 20%;
+  		transform: translateY(10%);	
+  	}
+  }
+}
 
 
 
