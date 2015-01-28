@@ -469,3 +469,16 @@ html {
   #photo-container {
     height: 100%; }
  }
+
+@media screen and (max-width: 400px) {
+  #head .type {
+    font-size: 1.6em;
+    /* 62/24= 2.6em */
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 20%;
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%); }
+ }
