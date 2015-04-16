@@ -123,9 +123,9 @@ position: absolute;
 
 
 .text-one p{
-	padding-left: 220px;
+/*	padding-left: 220px;
 	padding-right: 220px;
-	padding-top: 80px;
+	padding-top: 80px;*/
 	line-height: 40px;
 	text-align: left;
 	margin-top: 15px;
@@ -325,9 +325,9 @@ ul li .back {
 ******************************************************************************/
 
 #text-one p{
-	padding-left: 220px;
+/*	padding-left: 220px;
 	padding-right: 220px;
-	padding-top: 80px;
+	padding-top: 80px;*/
 	line-height: 40px;
 	text-align: left;
 	margin-top: 15px;
@@ -364,22 +364,46 @@ ul li .back {
 /******************************************************************************
   Media queries
 *******************************************************************************/
+/*@media screen and (max-width: 1280px){
+  .header{
+  height: 80vh;
+  width: 100%;
+}
+}*/
+
+
 
 @media screen and (max-width: 1150px){
 .header{
-	height: 80vh;
-	width: 1150px;
+	height: 100vh;
+	width: 100%;
 }
+
+.imagess{
+  width: 100%;
+}
+
+.low{
+width: 100%;
+}
+
 p{
 	padding: 0px;
 	transition: 1s ease-in-out all;
 }
-
-#text-one p{
-	padding-left: 180px;
+.img{
+  max-height: 500px;
+  transition: 1s ease-in-out all;
+}
+.img img{
+  height: 500px;
+  transition: 1s ease all;
+}
+/*#text-one p{*/
+	/*padding-left: 180px;
 	padding-right: 180px;
-	padding-top: 40px;
-	line-height: 40px;
+	padding-top: 40px;*/
+/*	line-height: 40px;
 	text-align: left;
 	margin-top: 15px;
 	text-indent: 50px;
@@ -412,21 +436,27 @@ p{
   width: 300px;
   transition: 1s ease-in-out all;
 
-}
+}*/
+
+
 
 }  
 
-@media screen and (max-width: 950px){
- li{
- 	width: 600px;
- }
-}
+
 
 @media screen and (max-width: 900px){
 
 .header{
-		width: 900px;
-	}
+  width: 100%;
+}
+
+.imagess{
+  width: 100%;
+}
+
+.low{
+width: 100%;
+}
 .header p{
 	position: absolute;
     z-index: 1;
@@ -435,24 +465,26 @@ p{
       transform: translateY(-50%);
       border-left: 2px solid white;
       padding-left: 6px;
-        font-size: 50px;
+        font-size: 40px;
 }
 
 
 	#text-one p{
-	padding-left: 100px;
+	/*padding-left: 100px;
 	padding-right: 100px;
-	padding-top: 40px;
+	padding-top: 40px;*/
 	line-height: 40px;
 	text-align: left;
 	margin-top: 35px;
 	text-indent: 50px;
 	transition: 1s ease-in-out all;
 }
-  #text-one p{
-  padding-left: 100px;
+  
+
+.text-one p{
+/*  padding-left: 100px;
   padding-right: 100px;
-  padding-top: 40px;
+  padding-top: 40px;*/
   line-height: 40px;
   text-align: left;
   margin-top: 35px;
@@ -460,45 +492,36 @@ p{
   transition: 1s ease-in-out all;
 }
 
-.text-one p{
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 40px;
-  line-height: 40px;
-  text-align: left;
-  margin-top: 35px;
-  text-indent: 50px;
-  transition: 1s ease-in-out all;
-}
-  .text-one p{
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 40px;
-  line-height: 40px;
-  text-align: left;
-  margin-top: 35px;
-  text-indent: 50px;
-  transition: 1s ease-in-out all;
-}
 .img{
-	width: 900px;
 	max-height: 400px;
 	transition: 1s ease-in-out all;
 }
 .img img{
-	width: 900px;
 	height: 400px;
 
+
+
 }
 
-li{
+/*li{
 	width: 450px;
-}
+}*/
 
 }
 
 
-
+/*@media screen and (max-width: 700px){
+  .img{
+  width: 700px;
+  max-height: 350px;
+  transition: 1s ease-in-out all;
+}
+.img img{
+  width: 700px;
+  height: 350px;
+  margin-bottom: 140px;
+}
+}*/
 
 
 
@@ -507,15 +530,44 @@ li{
 
 @media screen and (max-width: 600px){
 
-	.header{
-		width: 600px;
-	}
+.fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 5px 5px rgba(0,0,0,.5);
+  background-color: #fff;
+  height: 80px;
+  transition: 0.5s ease-in-out all;
+  font-size: 30px;
+  line-height: 80px;
+  color: black;
+  display: none;
+
+
+}
+
+
+	  .header{
+  width: 100%;
+  overflow: hidden;
+}
+
+.imagess{
+  width: 100%;
+}
+
+.low{
+width: 100%;
+}
 	
 
 	#text-one p{
-	padding-left: 5px;
+/*	padding-left: 5px;
 	padding-right: 5px;
-	padding-top: 10px;
+	padding-top: 10px;*/
 	line-height: 40px;
 	text-align: left;
 	margin-top: 35px;
@@ -523,9 +575,9 @@ li{
 	transition: 1s ease-in-out all;
 }
   .text-one p{
-  padding-left: 5px;
+/*  padding-left: 5px;
   padding-right: 5px;
-  padding-top: 10px;
+  padding-top: 10px;*/
   line-height: 40px;
   text-align: left;
   margin-top: 35px;
@@ -533,19 +585,17 @@ li{
   transition: 1s ease-in-out all;
 }
 .img{
-	width: 600px;
-	max-height: 300px;
+	max-height: 250px;
 	transition: 1s ease-in-out all;
 }
 .img img{
-	width: 600px;
-	height: 300px;
+	height: 250px;
 	margin-bottom: 140px;
 }
 
-li{
+/*li{
 	width: 350px;
-}
+}*/
 
 .header p{
 position: absolute;
@@ -560,4 +610,78 @@ position: absolute;
 
 
 }
+
+
+#text-one p img{
+  border-radius: 0px 0px 0px 0px;
+  border: 1px solid black;
+  height: 110px;
+  width: 200px;
+  transition: 1s ease-in-out all;
+
 }
+
+.text-one p img{
+  border-radius: 0px 0px 0px 0px;
+  border: 1px solid black;
+  height: 110px;
+  width: 200px;
+  transition: 1s ease-in-out all;
+
+}
+}
+
+/*@media screen and (max-width: 500px){
+
+  .header{
+  height: 80vh;
+  width: 100%;
+}
+
+.imagess{
+  width: 100%;
+}
+
+.low{
+width: 100%;
+}
+}*/
+
+@media screen and (max-width: 400px){
+
+ .header{
+  height: 60vh;
+  width: 400px;
+}
+.header p{
+ left: 20%;
+ font-size: 40px;
+}
+
+.header .arrow{
+  z-index: -2;
+}
+
+.imagess{
+  width: 400px;
+}
+
+.imagess p{
+ font-size: 15px;
+ padding: 30px;
+}
+
+.low{
+width: 400px;
+}
+
+  .img{
+  max-height: 220px;
+  transition: 1s ease-in-out all;
+}
+.img img{
+  height: 220px;
+  margin-bottom: 140px;
+}
+}
+
