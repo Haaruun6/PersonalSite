@@ -81,6 +81,11 @@ position: absolute;
      -moz-animation-duration: 2s ; 
     -moz-animation-time-function: linear;
     -moz-animation-iteration-count: infinite;
+
+    -ms-animation-name: bounce;
+     -ms-animation-duration: 2s ; 
+    -ms-animation-time-function: linear;
+    -ms-animation-iteration-count: infinite;
     
   }
 
@@ -189,15 +194,19 @@ overflow: hidden;
 .img img{
   height: 500px;
   width: 100%;
+  filter: blur(0px);
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -ms-filter: blur(5px);
+  transition: 1s ease all;
  }
 
 .img img:hover{
+  filter: blur(0px);
   -webkit-filter: blur(0px);
   -moz-filter: blur(0px);
   -ms-filter: blur(0px);
+  transition: 1s ease all;
 }
 
 
